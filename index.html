@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="icon" href="img/culturama-favico.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Unbounded:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-    <header>
-        <h1>Pesquisa Online</h1>
-    </header>
     <main>
+        <header>
+            <img src="img/logo-culturama.png" alt="logo culturama">
+            <h1>Pesquisa Online</h1>
+        </header>
         <section>
             <form action="">
                  <fieldset>
@@ -31,7 +43,8 @@
                         <br>
                         <label for="userImage">Upload de foto</label>
                         <input type="file" name="userImage" id="userImage" accept="image/*">
-                </fieldset> 
+                </fieldset>
+                <br>
                 <fieldset>
                     <legend>Perfil</legend>                    
                     <p>Gênero:</p>
@@ -80,14 +93,13 @@
                         <option value="sergipe">Sergipe</option>
                         <option value="tocantins">Tocantins</option>
                     </select>
-
                     <br>
-
                     <label for="userCity">Cidade:</label>
                     <input type="text" name="userCity" id="userCity">
                 </fieldset>
+                <br>
                 <fieldset>
-                    <legend>Habitos</legend>
+                    <legend>Hábitos</legend>
                     <p>Redes sociais:</p>
                     <input type="checkbox" name="social" id="socialInstagram" value="instagram">
                     <label for="socialInstagram">Instagram</label> <br>
@@ -125,7 +137,17 @@
                     <label for="satisfacaoTexto">Deixe um comentário:</label>
                     <textarea name="satisfacaoTexto" id="satisfacaoTexto"></textarea><br>
                 </fieldset>
-                <button type="submit">Enviar</button> 
+                <br>
+                <fieldset>
+                    <legend>Confirmações</legend>
+                    <input type="checkbox" name="userLGPD" id="userLGPDTerm" value="accepted" required>
+                    <label for="userLGPDTerm">Eu aceito participar da pesquisa</label> <br>
+                    <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+                    <label for="getResult">Desejo receber o resultado por e-mail</label>
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button><br>
+                <button type="reset">Limpar</button>
 
 
 
