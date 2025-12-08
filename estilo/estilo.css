@@ -40,6 +40,7 @@ form {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset {
@@ -55,4 +56,67 @@ legend {
 
 input {
     margin: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="color"] {
+    padding: 0 5px;
+    width: 40px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: orangered;
+    color: white;
 }
